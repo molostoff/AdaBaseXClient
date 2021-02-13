@@ -1,0 +1,16 @@
+
+With "adabasexclient";
+
+Project AdaBaseXClient_Examples is
+
+   for Object_Dir use "obj";
+   for Exec_Dir use ".";
+   for Source_Dirs use ("examples");
+   for Main use ("example.adb", "exampleadd.adb", "examplecreate.adb",
+                 "queryexample.adb", "querybindexample.adb");
+
+   package Linker is
+      for Linker_Options use ("-lgnat", "-lgnarl");
+   end Linker;
+
+end AdaBaseXClient_Examples;
