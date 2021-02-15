@@ -25,6 +25,7 @@ Works with BaseX 7.0 and later.
 %package -n %{libname}%{soname}
 Summary:        Library files for ada-adabasexclient
 Group:          System/Libraries
+Obsoletes:      %{libname}%{soname} < %{version}
 
 %description -n %{libname}%{soname}
 The %{libname}%{soname} package contains library files for ada-adabasexclient.
