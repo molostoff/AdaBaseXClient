@@ -6,6 +6,10 @@ Works with BaseX 7.0 and later.
 
 This package depends on `GNAT.Sockets` and `GNAT.MD5`.
 
+[BaseX](https://basex.org/) is a robust, high-performance
+XML database engine and a highly compliant XQuery 3.1 processor
+with full support of the W3C Update and Full Text extensions.
+
 
 UNIX BUILD
 =====
@@ -24,7 +28,8 @@ If users want to build tests/examples:
 
     make build_examples
 
-If users want to check test with Ahven:
+If users want to check test with Ahven
+(BaseX server is required):
 
     make test
 
