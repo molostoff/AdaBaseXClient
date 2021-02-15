@@ -6,9 +6,6 @@ use Ada.Exceptions;
 use AdaBaseXClient;
 
 procedure QueryExample is
-
-   V : String_Vectors.Vector;
-
 begin
 
    if (Connect ("localhost", 1_984) = False) then
