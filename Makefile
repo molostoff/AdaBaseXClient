@@ -8,7 +8,7 @@ LIBRARY_TYPE = dynamic
 
 MAJOR   = 0
 MINOR   = 2
-REV     = 1
+REV     = 2
 VERSION = $(MAJOR).$(MINOR).$(REV)
 DBUSADA = libadabasexclient-$(VERSION)
 

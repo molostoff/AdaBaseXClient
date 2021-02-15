@@ -1,6 +1,6 @@
 project AdaBaseXClient is
 
-   Version := external ("VERSION", "0.2.1");
+   Version := external ("VERSION", "0.2.2");
 
    type Library_Kind is ("dynamic", "static");
    Library_Type : Library_Kind := external("LIBRARY_TYPE", "dynamic");

@@ -4,10 +4,10 @@
 
 %define pagname AdaBaseXClient
 %define libname libadabasexclient
-%define soname 0_2_1
+%define soname 0_2_2
 
 Name:           ada-adabasexclient
-Version:        0.2.1
+Version:        0.2.2
 Release:        1
 Summary:        Ada client for BaseX
 License:        MIT
