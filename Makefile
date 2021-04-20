@@ -16,7 +16,7 @@ SO_LIBRARY   = libadabasexclient.so.$(VERSION)
 
 PREPARE := $(shell mkdir -p $(OBJDIR) $(LIBDIR))
 
-all: build_lib gpr
+all: gpr build_lib
 
 build_lib:
 	gnatmake -Padabasexclient
@@ -25,6 +25,9 @@ gpr:
 	gnatprep -b gnat/adabasexclient.gpr.gp gnat/adabasexclient.gpr -DInvoked_By_Makefile \
        '-DIncludedir="$(PREFIX)/include"' '-DLibdir="$(PREFIX)/$(LIBDIR)"' \
        '-DAlidir="$(PREFIX)/$(LIBDIR)"' '-DLibrary_Type="${LIBRARY_TYPE}"'
+	gnatprep -b adabasexclient.gpr.gp adabasexclient.gpr -DInvoked_By_Makefile \
+       '-DVersion="$(VERSION)"' '-DLibdir="$(LIBDIR)"' \
+       '-DLibrary_Type="${LIBRARY_TYPE}"'
 
 build_examples:
 	gnatmake -Padabasexclient_examples
